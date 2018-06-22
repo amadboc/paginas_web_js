@@ -1,23 +1,40 @@
-//declaración
+/** Declaracion */
 var saludo
-//inicialización
-saludo = "Hola"
+/** Inicializacion */
+saludo = 'Hola'
+/*
+Tipos de datos
+- string
+- number
+- booleans (true / false)
+- object
+- undefined
+*/
 
-//declaración + inicialización
-var user ='Mundo'
-var edad = 23
-var estudiante = false
-var algo
-//Objeto en notacion JSON
+/** Declaracion + Inicializacion */
+var user = 'Mundo'
+
+/** Tipos de Datos */
+var nombre = 'Pepe' // string
+var edad = 23 // number
+var isEstudiante = false // boolean
+var algo // undefined
+// Objeto en notacion JSON
 var persona = {
-    nombre:'Pepe',
+    nombre: 'Juan',
     edad: 34,
-    isEstudiante: true,
+    isEstudiante: true
 }
 
+/** Como es JS respecto a los tipos
+ * - debil 
+ * - dinámico
+ */
+
 console.log(saludo, user)
-console.log(nombre)
-console.log(edad)
-console.log(isEstudiante)
-console.log(persona)
-console.log(persona.nombre)
+console.log(nombre, typeof nombre)
+console.log(edad, typeof edad)
+console.log(isEstudiante, typeof isEstudiante)
+console.log(algo, typeof algo)
+console.log(persona, typeof persona)
+console.log(persona.nombre, typeof persona.nombre)
