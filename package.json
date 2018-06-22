@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/amadboc/paginas_web_js.git"
   },
-  "keywords": ["JavaScript", "ECMAScript"],
+  "keywords": [
+    "JavaScript",
+    "ECMAScript"
+  ],
   "author": "amadboc",
   "license": "MIT",
   "bugs": {
