@@ -1,43 +1,46 @@
 let cadena = 'Pepe'
+let frase = 'Un anillo para todos'
 console.log(cadena.length)
-console.log(cadena.concat('Perez'));//no se usa. 
-//Se usa console.log(cadena + 'Perez');
+console.log(cadena.concat(' Peréz'));
+console.log(cadena + ' Peréz');
 
-aCadena = cadena.split('')
+/* aCadena = cadena.split('')
 console.log(aCadena)
 aFrase = frase.split(' ')
 console.log(aFrase);
-console.log(aFrase.join(''))
+console.log(aFrase.join('')) */
 
-console.log(aFrase.split(' ').join('').toUpperCase())
-console.log ('Perez'.toLowerCase());
+console.log(frase.split(' ').join('').toUpperCase());
+console.log('Peréz'.toLowerCase());
 
-'ciudades'.slice(2,5)
-'ciudades'.substr(2,3)
+
+console.log('ciudades'.slice(2,5));
+console.log('ciudades'.substr(2,3));
 
 function capitalizar(cadena) {
     let aTexto = cadena.split(' ')
-   
     for (let i = 0; i < aTexto.length; i++) {
         let palabra = aTexto[i]
-        let aLetras = palabras.split('')
+        let aLetras = palabra.split('')
         aLetras[0] = aLetras[0].toUpperCase()
-        palabra = aLetras.join('') 
-        aTexto[i] = palabra   
-        /* aTexto[î] = aTexto[i]  */
+        palabra = aLetras.join('')
+        aTexto[i] = palabra
     }
     let stringCap = aTexto.join(' ')
     return stringCap
 }
+
 
 function capitalizar2(cadena) {
     let aTexto = cadena.split(' ')
     for (let i = 0; i < aTexto.length; i++) {
         let aLetras = aTexto[i].split('')
         aLetras[0] = aLetras[0].toUpperCase()
-        aTexto[i] = aLetras.join('') 
+        aTexto[i] = aLetras.join('')
     }
-   return aTexto.join(' ')
+    return aTexto.join(' ')
 }
 
 console.log(capitalizar('Un anillo para todos'));
+
+console.log(String.fromCharCode(13465))
