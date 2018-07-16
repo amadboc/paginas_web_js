@@ -1,19 +1,20 @@
-
-function letraDNI(num){
-    if (isNaN(num*1) || num < 1 || num > 99999999 )
+function letraDNI(num) {
+   if (isNaN(num *1) || num < 1 || num > 99999999 ) {
         return 'Error'
+   }
+    const aLETRAS = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 
+    'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']
+    // return aLETRAS[num%23]    
     
-    const aLetras = ['T', 'R','W', 'A', 'G', 'M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E','T']
-/*     return aLetras[num%23]*/
-
     const LETRAS = 'TRWAGMYFPDXBNJZSQVHLCKET'
-    return aLetras[num%23]
+    return LETRAS[num%23]    
 }
-    
-function probar() {    
+
+function probar () {
     console.log(letraDNI('05017822'))
     console.log(letraDNI(50178228))
-    console.log(letraDNI(08943464))
+    console.log(letraDNI(50821728))
+    console.log(letraDNI('Pepe'))
 }
 
 probar()

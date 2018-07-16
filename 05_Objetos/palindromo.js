@@ -1,11 +1,17 @@
-function esPalindromo(texto) { 
-      
-    let aDatos = texto.split('')/*array con cada palabra, quito los espacios*/
-    let frase = aDatos.join('')/*reconstruyo la frase sin espacios*/
-    aDatos = frase.split('')/*array de letras para poder darle la vuelta a la frase*/
-    aClon = aDatos.join('|').split('|')// Clon del array con cada letra
-    aClon.reverse()// Clon del array al reves
-    let alReves = aClon.join('')// convierto el array en frase invertida
+function esPali(texto) {
+
+    // Array con cada palabra
+    let aDatos = texto.split(' ')
+    // Reconstruyo la frase 
+    let frase = aDatos.join('')
+    // Array con cada letra
+    aDatos= frase.split('')
+    // Clon del array con cada letra
+    aClon = aDatos.join('|').split('|')
+    // Clon del array al reves
+    aClon.reverse()
+    // frase invertida
+    let alReves = aClon.join('')
 
     let result = false
     // comparacion
@@ -13,25 +19,33 @@ function esPalindromo(texto) {
         result = true
     }
 
+    //console.log(frase);
+    //console.log(aDatos)
+    //console.log(aClon)
+    //console.log(alReves)
+
     return result
 }
 
 function esPaliShort(texto) {
     let result = false
-    // comparacion
     if (texto.split(' ').join('').toUpperCase() 
             === texto.split(' ').join('').split('').reverse().join('').toUpperCase()) {
         result = true
     }
-
     return result
 }
 
+
 function prueba() {
-    let texto = 'Hola, no soy palindromo'
-    console.log(esPalindromo(texto)) // False
-    texto = 'Mas arroz a la zorra Sam'
-    console.log(esPaliShort(texto)) // True
+    let texto = 'Hola'
+    console.log(esPali(texto)) // false
+    texto = 'Hola, no soy palindromo'
+    console.log(esPali(texto)) // false
+    texto = 'La ruta nos aporto otro paso natural'
+    console.log(esPali(texto)) // true
+    texto = 'Dabale arroz a la zorra el abad'
+    console.log(esPali(texto)) // true
 }
 
 // esPali('Hola Amigo')

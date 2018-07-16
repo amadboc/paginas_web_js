@@ -26,24 +26,26 @@ console.log(aNombres.slice(1,4))
 console.log(aNombres)
 
 aClon = aNombres.slice(0,aNombres.length)
-aClon.push('Juan')
+// aClon.push('Juan')
+aClon.push('Juan', 'Rosa')
 console.log(aClon);
 
 //let aElegidos = aNombres.splice(1,2)
 //let aElegidos = aNombres.splice(1,2,'Carlos', 'Juan', 'Antonio')
 // let aElegidos = aNombres.splice(1)
 // let aElegidos = aNombres.splice(0)
+// let aElegidos = aNombres.splice(2,0,'Antonio')
 
-let aElegidos = aNombres.splice(2,0,'Antonio')
-
-console.log("Elegidos: ")
+/* console.log("Elegidos: ")
 console.log(aElegidos)
 console.log("Original: ")
-console.log(aNombres) 
+console.log(aNombres)  */
+
 
 let aNotas = [[10,7,8], [5,4,7], [6,3,2]]
 console.log(aNotas[1][1]);
 
 aNombres = ['Pepe', 'Luis', 'Arancha', 'Rosa', 'Maria']
-aNombres.push (['Lorenzo', 'Herminia'])
+
+aNombres.push(...['Lorenzo', 'Herminia'])
 console.log(aNombres);

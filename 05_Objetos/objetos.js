@@ -84,3 +84,6 @@ function leeObjeto (oDatos) {
 // leeObjeto(oVuelo)
 console.clear()
 oVuelo.mostrar()
+
+
+
