@@ -30,7 +30,6 @@ oVuelo.mostrar = function (oDatos = this) {
 }
 
 let oVuelo1 = Object.create(oVuelo)
-oVuelo1.mostrarEnBruto()
+console.log(oVuelo1)
 console.log(typeof oVuelo1)
 console.log(oVuelo instanceof Object);
-console.log(oVuelo instanceof Array)
