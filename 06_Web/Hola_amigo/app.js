@@ -1,9 +1,10 @@
 function app () {
-    //Defino los nodos del DOM en los que me interesa que pase algo
+
+    // Defino los nodos del DOM que me interesan
     let domNombre = document.querySelector("#nombre")
     let domBtnSaludar = document.querySelector("#btnSaludar")
     let domBtnBorrar = document.querySelector("#btnBorrar")
-    let domOutPut = document.querySelector('#output')
+    let domOutput = document.querySelector('#output')
 
     // Defino los manejadores de eventos de algunos nodos
     domBtnSaludar.addEventListener('click', saludar)
@@ -16,8 +17,7 @@ function app () {
         let valorNombre = domNombre.value
         console.log('Input detectado')
         console.log('valorNombre: ', valorNombre)
-        // domOutput.innerHTML = `Hola, <strong>${valorNombre}</strong>`
-        alert(valorNombre)
+        domOutput.innerHTML = `Hola, <strong>${valorNombre}</strong>`
     }
 
     /* function detectarChange() {

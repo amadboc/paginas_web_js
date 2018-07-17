@@ -7,28 +7,25 @@ function app () {
     let domOutput = document.querySelector('#output')
 
     // Defino los manejadores de eventos de algunos nodos
-    domBtnSaludar.addEventListener('click', mostrar)
-    domBtnBorrar.addEventListener('click', borrar)
+    domBtnSaludar.addEventListener('dblclick', saludar)
+    domBtnSaludar.addEventListener('click', saludar)
+    domBtnBorrar.addEventListener('click', saludar)
     
-/*     function mostrar() {
-        domOutput.innerHTML = ''
-        let valorNombre = domNombre.value
-        if (!!valorNombre) {
-            domOutput.innerHTML = `Hola, <strong>${valorNombre}</strong>`
-        }
-    } */
+    function saludar(ev) {
 
-    function mostrar() {
+        if (ev.type === 'dblclick') {
+            domOutput.innerHTML = "DBLCLICK no se debe usar"
+            return
+        }
+        if (ev.target.id === 'btnBorrar') {
+            domNombre.value = '' 
+        }
         domOutput.innerHTML = ''
         if (!!domNombre.value) {
             domOutput.innerHTML = `Hola, <strong>${domNombre.value}</strong>`
         } 
     }
-
-    function borrar () {
-        domNombre.value = ''
-        mostrar()
-    }
 }
 document.addEventListener('DOMContentLoaded', app)
+
 
