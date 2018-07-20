@@ -1,7 +1,7 @@
 import {Elemento} from './Elemento.js'
 import {Empresa} from './Empresa.js'
 import {Factura} from './Factura.js'
-import { FacturaHtml } from './FacturaHtml.js';
+import {FacturaHtml} from './FacturaHtml.js';
 
 function crearFactura1() {
     let factura1 = new Factura( 
@@ -28,8 +28,7 @@ function crearFactura1() {
                 'K-434344343')
     
     factura1.elementos.push(
-        new Elemento (
-            'La Isla del Tesoro',30,10)
+        new Elemento ('La Isla del Tesoro',30,10)
     )
 
     factura1.elementos.push(
@@ -75,13 +74,10 @@ function crearFactura2() {
     //console.log(factura1)
 }
 
-
-
-
 function main() {
     crearFactura1()
-    //crearFactura2()
-}
+/*  crearFactura2()
+ */}
 
 document.addEventListener('DOMContentLoaded', main)
 

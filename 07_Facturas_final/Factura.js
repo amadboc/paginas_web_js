@@ -1,9 +1,10 @@
-import { Empresa } from './Empresa.js'
+import {Empresa} from './Empresa.js'
 
 export class Factura {
     constructor (tipoIVA, formaPago) {
         this.empresa = new Empresa(
             'Boracay Ediciones',
+            
             'c/ Pez',
             '587 349 785',
             'Z-345123876')
