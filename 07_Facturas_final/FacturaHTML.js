@@ -33,10 +33,11 @@ export class FacturaHtml {
         this.importeTotal.innerHTML = facturaDatos.importeTotal
         this.tipoIVA.innerHTML = facturaDatos.tipoIVA
         this.formaPago.innerHTML = facturaDatos.formaPago
-        this.pintaTabla(facturaDatos.elementos)
+        this.elementosTabla.innerHTML = 
+        this.pintarTabla(facturaDatos.elementos)
     }
 
-    pintaTabla(elementosDatos) {
+    pintarTabla(elementosDatos) {
         console.log(elementosDatos)
         let tabla =
             `<tr class="tabla-title">
@@ -53,10 +54,7 @@ export class FacturaHtml {
                     <td>${item.cantidad}</td>
                 </tr>`
             });
-
-       
-        this.elementosTabla.innerHTML = tabla
-
+        return tabla
     }
 
 }

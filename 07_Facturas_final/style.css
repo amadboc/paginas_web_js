@@ -2,6 +2,12 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+
+}
+
 .content-wrapper {
     width: 80%;
     margin-left: auto;
@@ -9,9 +15,8 @@
 }
 
 .datos {
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 2px solid black;
+    border: 1px solid black;
     min-height: 10vh;
     padding: 1rem 1.5rem;
 }
@@ -19,14 +24,9 @@
 dt {
     font-weight: 900;
 }
-h2 {
-    color:rgb(0, 83, 139);;
-}
 
-dt {
-    font-weight: 900;
-    text-decoration: underline;
-    text-transform: uppercase;
+h2 {
+    color:rgb(0, 83, 139);
 }
 
 table {
@@ -39,4 +39,8 @@ th {
 .tabla-title {
     background-color:rgb(0, 83, 139);;
     color: white;
+}
+
+.elementos_tabla td {
+    text-align: center;
 }
