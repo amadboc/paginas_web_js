@@ -8,6 +8,7 @@ if (numVisitas) {
     Cookies.set('NumVisitas', numVisitas, { expires: 7 })
     console.log('Visita número', numVisitas)
 } else {
-    // No existe la cookie NumVisitas, la creo
+    // No existe la cookie NumVisitas
     Cookies.set('NumVisitas', 1, { expires: 7 })
 }
+
