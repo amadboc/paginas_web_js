@@ -15,7 +15,7 @@ function mapaLoc() {
             }; // fin de options
             console.log('Hola')
             var map = new google.maps.Map(domMapa, options);
-            var marker = new google.maps.Marker(options);
+           var marker = new google.maps.Marker(options);
             var circle = new google.maps.Circle({
                 map: map, radius: pos.coords.accuracy
             }); // fin de circle

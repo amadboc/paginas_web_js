@@ -8,10 +8,8 @@ if (localStorage.numVisitas) {
 console.log('Visita número', localStorage.numVisitas)
 
 // Como sería SI FUERA SINCRONO
-data = navigator.geolocation.getCurrentPosition()
-console.log(data)
-
-mostarDatos =
+// data = navigator.geolocation.getCurrentPosition()
+// console.log(data)
 
 navigator.geolocation.getCurrentPosition(
      (data) => { console.log(data)},
